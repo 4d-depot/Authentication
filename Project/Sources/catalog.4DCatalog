@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Authentification" uuid="EFF12A7DA32F4C5BAA8E408EEFEAD8E5" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Users" uuid="ECD1D82CDFCC4E8F803989D9E89C850C" id="1">
+		<field name="ID" uuid="CFFC3677C90547CFA429C777E0B08582" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="identifier" uuid="C0E6568C7EAD420AA748832D25D50D7C" type="10" limiting_length="255" id="2"/>
+		<field name="password" uuid="186B49A65C704E9285DA52A2C5F593EB" type="10" limiting_length="255" id="3"/>
+		<field name="role" uuid="960225944F9447FBA395BDB86ADC3189" type="10" limiting_length="255" id="4"/>
+		<field name="firstname" uuid="685A46207D9846259F864E555511D58B" type="10" limiting_length="255" id="5"/>
+		<field name="lastname" uuid="012DEA0850B348D59042525CD1886116" type="10" limiting_length="255" id="6"/>
+		<primary_key field_name="ID" field_uuid="CFFC3677C90547CFA429C777E0B08582"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="7">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="113" top="68" width="203.2353515625" height="207.04638671875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Info" uuid="0C997D4D1B7440018C54E39CB0C543B0" id="2">
+		<field name="ID" uuid="8780EC773B234E1098B45311E1072F24" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<primary_key field_name="ID" field_uuid="8780EC773B234E1098B45311E1072F24"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="417.19506835938" top="51.555725097656" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="SensitiveInfo" uuid="A221A3661B144B288D4A817DEB6237D8" id="3">
+		<field name="ID" uuid="2EA3C8D0ABFF46DA82853B1ECED1083B" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<primary_key field_name="ID" field_uuid="2EA3C8D0ABFF46DA82853B1ECED1083B"/>
+		<table_extra>
+			<editor_table_info fields_ordering="1" displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="640" top="40" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" uuid="6455D981F67448528A464AAB99C45E58" type="7">
+		<field_ref uuid="CFFC3677C90547CFA429C777E0B08582" name="ID">
+			<table_ref uuid="ECD1D82CDFCC4E8F803989D9E89C850C" name="Users"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B8C17132530D4DA598B1541E601A6BFC" type="7">
+		<field_ref uuid="8780EC773B234E1098B45311E1072F24" name="ID">
+			<table_ref uuid="0C997D4D1B7440018C54E39CB0C543B0" name="Info"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="DC146F3B7EC748B6BDF1F61CBC1A43F0" type="7">
+		<field_ref uuid="2EA3C8D0ABFF46DA82853B1ECED1083B" name="ID">
+			<table_ref uuid="A221A3661B144B288D4A817DEB6237D8" name="SensitiveInfo"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:72.1.0" __keywordBuildingHash="icu:72.1.0"/>
+</base>

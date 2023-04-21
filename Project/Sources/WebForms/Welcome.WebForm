@@ -1,0 +1,339 @@
+{
+	"metadata": {
+		"v": "1.0",
+		"datasources": [
+			{
+				"id": "sessionInfo",
+				"type": "scalar",
+				"namespace": "",
+				"dataType": "object",
+				"initialValue": {}
+			}
+		],
+		"styles": [
+			{
+				"name": "styleBox",
+				"content": "self {\n box-shadow: 0 0 40px 0 rgb(0 0 0 / 15%);\n}",
+				"parentId": null,
+				"scope": "local",
+				"id": "J92o5q0Y0GOm2fEB_5Wgy"
+			}
+		]
+	},
+	"components": {
+		"ROOT": {
+			"type": {
+				"resolvedName": "Container"
+			},
+			"isCanvas": true,
+			"props": {
+				"classNames": [],
+				"events": [
+					{
+						"type": "method",
+						"dataclass": "DataStore",
+						"events": [
+							"onload"
+						],
+						"id": "hBMu6aF9hDheSZB1Z6oNhb",
+						"method": "ds.sessionInfo",
+						"params": [],
+						"returns": {
+							"name": "result",
+							"type": "Object",
+							"datasource": "sessionInfo"
+						}
+					}
+				],
+				"className": "bg-white h-full w-full px-6"
+			},
+			"displayName": "Webform",
+			"custom": {},
+			"parent": "",
+			"hidden": false,
+			"nodes": [
+				"dy2Jmc_bna",
+				"ts-6g5uhP8"
+			],
+			"linkedNodes": {}
+		},
+		"dy2Jmc_bna": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Welcome to your app!",
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"textAlign": "center",
+					"fontSize": "20px",
+					"fontWeight": "500"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"ts-6g5uhP8": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"marginTop": "20px"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ROOT",
+			"hidden": false,
+			"nodes": [
+				"nIOK2YUMmF",
+				"_Vh7VzOtPo"
+			],
+			"linkedNodes": {}
+		},
+		"nIOK2YUMmF": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": "Who amI? ",
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " "
+							}
+						]
+					}
+				],
+				"datasource": "",
+				"style": {
+					"marginLeft": "10px",
+					"color": "#6c7ae0"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "ts-6g5uhP8",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"_Vh7VzOtPo": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"borderWidth": "1px",
+					"borderRadius": "15px",
+					"width": "30%"
+				},
+				"classNames": [
+					"styleBox"
+				]
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "ts-6g5uhP8",
+			"hidden": false,
+			"nodes": [
+				"iCm2B3Bv19",
+				"uqC0-3zhx-"
+			],
+			"linkedNodes": {}
+		},
+		"iCm2B3Bv19": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": [],
+				"style": {
+					"display": "flex",
+					"flexDirection": "row",
+					"justifyContent": "space-between",
+					"alignItems": "center"
+				}
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "_Vh7VzOtPo",
+			"hidden": false,
+			"nodes": [
+				"RM1EK4R_Qi"
+			],
+			"linkedNodes": {}
+		},
+		"RM1EK4R_Qi": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": ""
+							},
+							{
+								"type": "datasource",
+								"datasource": "sessionInfo.userName",
+								"children": [
+									{
+										"text": "userName",
+										"bold": false,
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false
+									}
+								],
+								"dsType": "",
+								"format": ""
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " "
+							}
+						]
+					}
+				],
+				"datasource": "sessionInfo.userName"
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "iCm2B3Bv19",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		},
+		"uqC0-3zhx-": {
+			"type": {
+				"resolvedName": "StyleBox"
+			},
+			"isCanvas": true,
+			"props": {
+				"events": []
+			},
+			"displayName": "Stylebox",
+			"custom": {},
+			"parent": "_Vh7VzOtPo",
+			"hidden": false,
+			"nodes": [
+				"AvNId1AJJv"
+			],
+			"linkedNodes": {}
+		},
+		"AvNId1AJJv": {
+			"type": {
+				"resolvedName": "Text"
+			},
+			"isCanvas": false,
+			"props": {
+				"events": [],
+				"doc": [
+					{
+						"type": "paragraph",
+						"children": [
+							{
+								"text": " ",
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false
+							},
+							{
+								"bold": true,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " "
+							},
+							{
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": "I am a "
+							},
+							{
+								"type": "datasource",
+								"datasource": "sessionInfo.role",
+								"children": [
+									{
+										"italic": false,
+										"underlined": false,
+										"strikethrough": false,
+										"text": "role",
+										"bold": true
+									}
+								],
+								"dsType": "",
+								"format": ""
+							},
+							{
+								"bold": false,
+								"italic": false,
+								"underlined": false,
+								"strikethrough": false,
+								"text": " "
+							}
+						]
+					}
+				],
+				"datasource": "sessionInfo.role",
+				"style": {
+					"textAlign": "left"
+				}
+			},
+			"displayName": "Text",
+			"custom": {},
+			"parent": "uqC0-3zhx-",
+			"hidden": false,
+			"nodes": [],
+			"linkedNodes": {}
+		}
+	}
+}

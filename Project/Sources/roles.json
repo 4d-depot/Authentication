@@ -1,0 +1,44 @@
+{
+	"permissions": {
+		"allowed": [
+			{
+				"applyTo": "SensitiveInfo",
+				"type": "dataclass",
+				"read": [
+					"readSensitiveInfo"
+				]
+			},
+			{
+				"applyTo": "Info",
+				"type": "dataclass",
+				"read": [
+					"readInfo"
+				]
+			}
+		]
+	},
+	"privileges": [
+		{
+			"privilege": "readSensitiveInfo",
+			"includes": []
+		},
+		{
+			"privilege": "readInfo",
+			"includes": []
+		}
+	],
+	"roles": [
+		{
+			"role": "simpleUSer",
+			"privileges": [
+				"readInfo"
+			]
+		},
+		{
+			"role": "superUser",
+			"privileges": [
+				"readSensitiveInfo"
+			]
+		}
+	]
+}
